@@ -1,0 +1,13 @@
+import sys 
+import osmnx as ox
+
+place = input('Enter the name of the place: ')
+
+G = ox.graph_from_place(place,  network_type='walk') 
+nodes, edges = ox.graph_to_gdfs(G, nodes=True, edges=True)  
+ox.save_graphml(G, 'graph.graphml')
+nodes.to_csv('nodes.csv')
+edges.to_csv('edges.csv')
+
+print('Place data fetched and saved successfully')
+
