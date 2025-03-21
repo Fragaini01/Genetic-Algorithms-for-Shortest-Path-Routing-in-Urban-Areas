@@ -15,5 +15,5 @@ This version will calculate and print the time taken, the best found path and th
 This picture is the path found from Niels Bohr Building to Niels Bohr Institute, Copenhagen.
 
 The parallel version was optimized for testing three different problems, whose description can be found in the file. It can be executed by:
-$python sequential_version.py <problem_num> <population_size> <number_of_generations> <mutation_ratio>
+$python parallel_version.py <problem_num> <population_size> <number_of_generations> <mutation_ratio>
 
